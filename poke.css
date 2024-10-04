@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("/Task_Html_CSS/PokeGame/images/forest.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+p {
+  margin-bottom: 0 !important;
+}
+h3,
+h5 {
+  margin-bottom: 0 !important;
+}
+.hp {
+  text-align: center;
+  width: 25%;
+  padding: 0.2rem 0.5rem;
+  background-color: #fff;
+  border-radius: 16px;
+  font-size: 0.8rem;
+}
+button {
+  border: none;
+  outline: none;
+  background-color: #c2e812;
+  padding: 10px 40px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #000;
+  border-radius: 5px !important;
+  transition: all ease 0.1s !important;
+  box-shadow: 0px 5px 0px 0px #899944f5 !important;
+}
+
+button:active {
+  transform: translateY(5px) !important;
+  box-shadow: 0px 0px 0px 0px #899944f5 !important;
+}
+.d-flex-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.d-flex-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin: 6rem 8rem;
+}
+.cards {
+  gap: 2rem;
+}
+.cards .first-card,
+.second-card {
+  width: 70%;
+}
+.cards .first-card,
+.second-card {
+  background: radial-gradient(circle at 50% 0%, orange 36%, #dbe9ee 36%);
+  /* background-color: #dbe9ee; */
+  padding: 1.6rem;
+  border-radius: 12px;
+}
+/* .cards .first-card .hp,
+.second-card .hp {
+  position: absolute;
+  left: 65%;
+} */
+.card-content {
+  gap: 0.8rem;
+}
+.card-content .pokemon-img {
+  margin-top: 1.3rem;
+}
+.pokemon-img img {
+  width: 180px;
+  min-height: 200px;
+}
+.card-content .stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  text-align: center;
+}
+.verses {
+  width: 120px;
+  text-align: center;
+}
+@media (min-width: 576px) {
+  .container {
+    margin-top: 8rem;
+  }
+  .cards {
+    width: 100%;
+    gap: 5rem;
+  }
+  .hp {
+    text-align: center;
+    width: 20%;
+    padding: 0.2rem 0.2rem;
+    background-color: #fff;
+    border-radius: 12px;
+    font-size: 0.8rem;
+  }
+  .cards .first-card,
+  .second-card {
+    height: 450px;
+    width: 25%;
+  }
+  .cards .first-card .second-card,
+  .card-content {
+    gap: 0.8rem;
+  }
+  .cards .first-card,
+  .second-card {
+    padding: 1.5rem 2rem;
+    border-radius: 12px;
+  }
+
+  /* .cards .first-card .hp,
+  .second-card .hp {
+    position: relative;
+  } */
+}
